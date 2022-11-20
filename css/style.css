@@ -14,8 +14,8 @@
 
 /* BG COLORS FOR LAYOUT */
 
-.bgc-red{
-    background-color: red;
+.bgc-sidebar{
+    background-color: rgb(5,30,52);
 }
 
 .bgc-yellow{
@@ -43,7 +43,7 @@ header{
 
 aside{
     height: calc(100vh - 70px);
-    width: 120px;
+    width: 10%;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -55,7 +55,7 @@ main{
     bottom: 0;
     right: 0;
     height: calc(100vh - 70px);
-    width: calc(100vw - 120px);
+    width: 90%;
 }
 
 #topbar{
@@ -84,3 +84,11 @@ main{
     height: 100px;
 }
 
+/* Sidebar */
+
+.sidebar_row{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
