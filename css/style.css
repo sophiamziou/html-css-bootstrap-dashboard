@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+/* UTILITY */
+
+.img_classe{
+    height: 30px;
+    width: 30px;
+    margin: 0 5px;
+}
 
 /* BG COLORS FOR LAYOUT */
 
@@ -58,6 +65,7 @@ main{
 }
 
 #cards{
+    overflow: scroll;
     height: calc(100% - 100px);
     width: 100%;
     background-color: brown;
@@ -66,8 +74,11 @@ main{
 /* BOOTSTRAP layout */
 
 .content{
-    background-color: lightgray;
     width: 100%;
+}
+
+.contents{
+    background-color: lightgray;
     height: 100px;
 }
 
