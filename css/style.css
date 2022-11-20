@@ -26,8 +26,12 @@
 /* MACRO LAYOUT */
 
 header{
+    position: fixed;
+    top: 0;
+    right: 0;
     width: 100%;
     height: 70px;
+    z-index: 2;
 }
 
 aside{
@@ -50,7 +54,6 @@ main{
     position: relative;
     top: 0;
     left: 0;
-    height: 100px;
     width: 100%;
 }
 
@@ -59,3 +62,12 @@ main{
     width: 100%;
     background-color: brown;
 }
+
+/* BOOTSTRAP layout */
+
+.content{
+    background-color: lightgray;
+    width: 100%;
+    height: 100px;
+}
+
