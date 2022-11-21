@@ -9,20 +9,42 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <header class="bgc-black d-flex align-items-center">
+    <header class="d-flex align-items-center">
       <nav class="container-fluid bg-white">
         <div class="row">
           <div class="col-auto">
             <!-- LOGO DESKTOP -->
             <img src="./img/logo.svg" class="p-2 img-fluid d-none d-lg-block" alt="logo">
             <!-- LOGO MOBILE -->
-            <!-- <img src="./img/mobile-logo.png" class="p-2 img-fluid d-lg-none" alt="logo"> -->
+            <img src="./img/mobile-logo.png" class="p-2 img-fluid d-lg-none logo_sm" alt="logo">
           </div>
           <div class="col">
-            <div>
+            <div class="search-bar">
+              <i class="fa fa-solid fa-magnifying-glass"></i>
+              <input type="text" class="search-bar-input" placeholder="Prova a cercare: Lezioni di Lavarel">
             </div>
           </div>
-          <div class="col-auto"></div>
+          <div class="col-auto">
+            <ul class="list-group list-group-horizontal border_none">
+              <li class="list-group-item d-none d-lg-inline">
+                <i class="fas fa-list"></i>
+              </li>
+              <li class="list-group-item d-none d-lg-inline">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </li>
+              <li class="list-group-item d-none d-lg-inline">
+                <i class="fa-solid fa-circle-question"></i>
+              </li>
+              <li class="list-group-item">
+                <i data-bs-toggle="dropdown" role="button" id="dropdownMenuBell" class="fa-solid fa-bell"></i>
+                <ul aria-labelledby="#dropdownMenuBell" class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -36,19 +58,19 @@
                 <li class="nav-item">
                   <a href="#" class="nav-link text-white" aria-current="page">
                     <i class="me-2 fa-solid fa-house text-white"></i>
-                    home
+                    <span class="d-none d-lg-inline">Home</span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link text-white" aria-current="page">
                     <i class="me-2 fa-solid fa-chart-simple text-white"></i>
-                    Stats
+                    <span class="d-none d-lg-inline">Stats</span>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link text-white" aria-current="page">
                     <i class="me-2 fa-solid fa-signal text-white"></i>
-                    Signals
+                    <span class="d-none d-lg-inline">Signal</span>
                   </a>
                 </li>
               </ul>  
@@ -60,7 +82,7 @@
                 <li class="nav-item">
                   <a href="#" class="nav-link text-white" aria-current="page">
                     <i class="me-2 fa-solid fa-gear text-white"></i>
-                    Admin
+                    <span class="d-none d-lg-inline">Admin</span>
                   </a>
                 </li>
               </ul>  
@@ -75,7 +97,6 @@
             <div class="row">
               <div class="col-12 col-md-4 col-lg-6 my-2">
                 <div class="contents">
-                  <i class=""></i>
                 </div>
               </div>
               <div class="col-12 col-md-4 col-lg-3 my-2">
