@@ -160,3 +160,9 @@ main{
 
 }
 
+@media screen and (max-width: 576px){
+    .table th:nth-child(2), .table td:nth-child(2), .table th:nth-child(3), .table td:nth-child(3){
+        display: none;
+    }
+}
+
