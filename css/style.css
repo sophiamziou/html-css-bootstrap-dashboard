@@ -56,7 +56,7 @@ main{
     bottom: 0;
     right: 0;
     height: calc(100vh - 70px);
-    width: calc(100% - 150px);
+    width: calc(100% - 140px);
 }
 
 #topbar{
@@ -117,7 +117,7 @@ main{
     border-radius: 10px;
     padding: 10px;
     background-color: rgb(229,229,229);
-    margin: 3px 0px;
+    margin: 0px;
 }
 
 .search-bar-input{
@@ -132,9 +132,24 @@ main{
     padding-right: 15px;
 }
 
-@media screen and (min-width: 992px){
+@media screen and (max-width: px){
+    aside{
+        width: 60px;
+    }
+}
+
+
+@media screen and (max-width: 992px){
     .search-bar{
-        margin: 0px;
+        margin: 3px 0px;
+    }
+
+    aside{
+        width: 70px;
+    }
+
+    main{
+        width: calc(100% - 70px);
     }
 }
 
