@@ -43,7 +43,7 @@ header{
 
 aside{
     height: calc(100vh - 70px);
-    width: 10%;
+    width: 150px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -55,7 +55,7 @@ main{
     bottom: 0;
     right: 0;
     height: calc(100vh - 70px);
-    width: 90%;
+    width: calc(100% - 150px);
 }
 
 #topbar{
@@ -71,6 +71,15 @@ main{
     width: 100%;
     background-color: rgb(248,249,250);
     padding: 10px 0;
+}
+
+.table th:nth-child(1), .table td:nth-child(1){
+    width: auto;
+}
+
+.table th:not(:nth-child(1)), .table td:not(:nth-child(1)){
+    width: 7rem;
+    text-align: center;
 }
 
 /* BOOTSTRAP layout */
