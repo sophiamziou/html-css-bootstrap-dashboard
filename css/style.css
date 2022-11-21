@@ -12,22 +12,23 @@
     margin: 0 5px;
 }
 
-/* BG COLORS FOR LAYOUT */
+.button_topbar{
+    font-size: 12px;
+    color: white;
+    background-color: rgb(22,91,186);
+    border: none;
+    border-radius: 40px;
+    padding: 2px 8px;
+}
+
+/* BG COLORS */
 
 .bgc-sidebar{
     background-color: rgb(5,30,52);
 }
 
-.bgc-yellow{
-    background-color: yellow;
-}
-
-.bgc-blue{
-    background-color: lightskyblue;
-}
-
-.bgc-black{
-    background-color: rgba(0, 0, 0, 0.515);
+.bgc-topbar{
+    background-color: rgb(27,114,232);
 }
 
 /* MACRO LAYOUT */
@@ -87,6 +88,13 @@ main{
 
 /* sidebar contents */
 
+.sidebar_row{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
 .table th:nth-child(1), .table td:nth-child(1){
     width: auto;
 }
@@ -132,6 +140,8 @@ main{
     padding-right: 15px;
 }
 
+/* RESPONSIVE */
+
 @media screen and (max-width: px){
     aside{
         width: 60px;
@@ -151,14 +161,5 @@ main{
     main{
         width: calc(100% - 70px);
     }
-}
-
-/* Sidebar */
-
-.sidebar_row{
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
 }
 

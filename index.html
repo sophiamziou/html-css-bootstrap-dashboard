@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
+    <!-- HEADER navbar -->
     <header class="d-flex align-items-center">
       <nav class="container-fluid bg-white">
         <div class="row">
@@ -18,12 +19,14 @@
             <!-- LOGO MOBILE -->
             <img src="./img/mobile-logo.png" class="p-2 img-fluid d-lg-none logo_sm" alt="logo">
           </div>
+          <!-- search bar -->
           <div class="col">
             <div class="search-bar">
               <i class="fa fa-solid fa-magnifying-glass"></i>
               <input type="text" class="search-bar-input" placeholder="Prova a cercare: Lezioni di Lavarel">
             </div>
           </div>
+          <!-- 4 icons nav -->
           <div class="col-auto">
             <ul class="list-group list-group-horizontal border_none">
               <li class="list-group-item d-none d-lg-inline">
@@ -48,6 +51,7 @@
         </div>
       </nav>
     </header>
+    <!-- SIDEBAR -->
     <aside class="bgc-sidebar">
       <div class="container h-100">
         <div class="row py-3 sidebar_row">
@@ -76,6 +80,7 @@
               </ul>  
             </div>
           </div>
+          <!-- last icon sidebar -->
           <div class="text-white">
             <div class="content">
               <ul class="nav nav-pills flex-column mb-auto">
@@ -91,20 +96,40 @@
         </div>
       </div>
     </aside>
-    <main class="bgc-blue">
-        <section id="topbar" class="bgc-yellow">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-12 col-md-4 col-lg-6 my-2">
-                <div class="contents">
+    <!-- MAIN: topbar and cards section -->
+    <main>
+        <section id="topbar" class="bgc-topbar">
+          <div class="container-fluid text-white">
+            <div class="row p-2">
+              <div class="col-12 col-sm-4 col-lg-6 order-2 order-sm-0 my-2">
+                <div class="content">
+                  <p class="fs-3">
+                    Boolean
+                    <button class="button_topbar">
+                      Piano blaze
+                    </button>
+                  </p>
+                  <p>
+                    <button class="button_topbar">3 app</button>
+                    <i class="fa fa-angle-double-right"></i>
+                    <button class="button_topbar d-none d-lg-inline">Boolean mobile app</button>
+                    <button class="button_topbar d-none d-lg-inline">Boolean web app</button>
+                    <button class="button_topbar d-none d-lg-inline">Boolean blog app</button>
+                  </p>
                 </div>
               </div>
-              <div class="col-12 col-md-4 col-lg-3 my-2">
-                <div class="contents">
+              <div class="col-12 col-sm-4 col-lg-4 order-3 order-sm-0 my-2">
+                <div class="content">
+                  <p>Studenti online negli ultimi 30 minuti</p>
+                  <p class="fs-3">125</p>
                 </div>
               </div>
-              <div class="col-12 col-md-4 col-lg-3 my-2">
-                <div class="contents">
+              <div class="col-12 col-sm-4 col-lg-2 order-1 order-sm-0 my-2">
+                <div class="content">
+                  <span>Nuovo Studente</span>
+                  <button type="button" class="btn btn-outline-light mx-3">
+                    <i class="fas fa-plus"></i>
+                  </button>
                 </div>
               </div>
             </div>
