@@ -98,10 +98,12 @@
     </aside>
     <!-- MAIN: topbar and cards section -->
     <main>
+        <!-- TOPBAR -->
         <section id="topbar" class="bgc-topbar">
           <div class="container-fluid text-white">
             <div class="row p-2">
               <div class="col-12 col-sm-4 col-lg-6 order-2 order-sm-0 my-2">
+                <!-- Boolean buttons -->
                 <div class="content">
                   <p class="fs-3">
                     Boolean
@@ -119,17 +121,85 @@
                 </div>
               </div>
               <div class="col-12 col-sm-4 col-lg-4 order-3 order-sm-0 my-2">
+                <!-- students online -->
                 <div class="content">
                   <p>Studenti online negli ultimi 30 minuti</p>
                   <p class="fs-3">125</p>
                 </div>
               </div>
               <div class="col-12 col-sm-4 col-lg-2 order-1 order-sm-0 my-2">
+                <!-- OFFCANVAS -->
                 <div class="content">
                   <span>Nuovo Studente</span>
-                  <button type="button" class="btn btn-outline-light mx-3">
+                  <button type="button" class="btn btn-outline-light mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                     <i class="fas fa-plus"></i>
                   </button>
+                  <div class="offcanvas offcanvas-end text-black offcanvas_width" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header ">
+                      <p class="offcanvas-title fs-5" id="offcanvasRightLabel">
+                        Inserisci un nuovo studente
+                      </p>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <form class="row g-3">
+                        <div class="col-md-6">
+                          <label for="validationCustom01" class="form-label">Nome</label>
+                          <input type="text" class="form-control" id="validationCustom01" required>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="validationCustom02" class="form-label">Cognome</label>
+                          <input type="text" class="form-control" id="validationCustom02" required>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Email</label>
+                          <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="email" class="form-control" id="inputEmail4" aria-label="email" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputPassword4" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputAddress" class="form-label">Indirizzo</label>
+                          <input type="text" class="form-control" id="inputAddress">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputCity" class="form-label">Città</label>
+                          <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="inputState" class="form-label">Stato</label>
+                          <select id="inputState" class="form-select">
+                            <option selected>Scegli...</option>
+                            <option>...</option>
+                          </select>
+                        </div>
+                        <div class="col-md-2">
+                          <label for="inputZip" class="form-label">CAP</label>
+                          <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-12">
+                          <label for="formFile" class="form-label">Foto</label>
+                          <input class="form-control" type="file" id="formFile">
+                        </div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                              seleziona per proseguire
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary">Salva</button>
+                          <button type="submit" class="btn btn-warning">Svuota</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

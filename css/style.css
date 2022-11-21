@@ -21,6 +21,10 @@
     padding: 2px 8px;
 }
 
+.content{
+    width: 100%;
+}
+
 /* BG COLORS */
 
 .bgc-sidebar{
@@ -73,17 +77,6 @@ main{
     width: 100%;
     background-color: rgb(248,249,250);
     padding: 10px 0;
-}
-
-/* BOOTSTRAP layout */
-
-.content{
-    width: 100%;
-}
-
-.contents{
-    background-color: lightgray;
-    height: 100px;
 }
 
 /* sidebar contents */
@@ -140,14 +133,13 @@ main{
     padding-right: 15px;
 }
 
-/* RESPONSIVE */
+/* topbar */
 
-@media screen and (max-width: px){
-    aside{
-        width: 60px;
-    }
+.offcanvas_width{
+    --bs-offcanvas-width: 50%;
 }
 
+/* RESPONSIVE */
 
 @media screen and (max-width: 992px){
     .search-bar{
@@ -161,5 +153,10 @@ main{
     main{
         width: calc(100% - 70px);
     }
+
+    .offcanvas_width{
+        --bs-offcanvas-width: 100%;
+    }
+
 }
 
