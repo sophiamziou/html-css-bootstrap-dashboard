@@ -25,6 +25,10 @@
     width: 100%;
 }
 
+.padding_right{
+    padding-right: 4px;
+}
+
 /* BG COLORS */
 
 .bgc-sidebar{
@@ -139,6 +143,10 @@ main{
 }
 
 /* HOVER effects */
+
+.nav-item:hover{
+    background-color: gray;
+}
 
 /* RESPONSIVE */
 
