@@ -167,6 +167,10 @@ main{
         --bs-offcanvas-width: 100%;
     }
 
+    .nav-item:hover{
+        background-color: transparent;
+    }
+
 }
 
 @media screen and (max-width: 576px){
